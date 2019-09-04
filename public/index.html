@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>DE Test Task</title>
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <section class="manage-block">
+        <div class="manage-block-header">
+            <ul>
+                <li><i class="icon everything-icon"></i><span>Everything</span></li>
+                <li><i class="icon commentary-icon"></i><span>Commentary</span></li>
+                <li><i class="icon all-events-icon"></i><span>Events</span></li>
+                <li><i class="icon alerts-icon"></i><span>Alerts</span></li>
+            </ul>
+        </div>
+        <textarea placeholder="Leave a comment..."></textarea>
+        <img src="img/Guy.jpg" class="avatar">
+        <div class="manage-block-footer">
+            <div class="manage-btn comment-btn blue-btn">Post comment</div>
+            <div class="manage-btn share-btn"><i class="icon share-btn-icon"></i>Share</div>
+            <div class="manage-btn attach-btn"><i class="icon attach-btn-icon"></i>Attach files</div>
+            <div class="cancel-btn">or <span>cancel</span></div>
+        </div>
+    </section>
+    <section class="event-block note-event">
+        <div class="event-content">
+            <div class="event-icon"><i class="icon note-event-icon"></i></div>
+            <div class="note-event__comments">
+                <div class="note-events__comments-item">
+                    <img src="img/Guy.jpg">
+                    <span class="comment-title blue-title">Note by Guy Mariano</span>
+                    <p class="comment-content">This Metric is a key indicator of our ability to retain users. Active for
+                        us means logged in and using the product for at least 10 minutes. The 10 minute marker allows us
+                        focus on dedicated users that are invested in the product.</p>
+                    <div class="comment-footer">
+                        <ul>
+                            <li><i class="icon insightful-icon"></i>Insightful</li>
+                            <li><i class="icon share-comment-icon"></i>Share</li>
+                            <li class="comment-date">Thur 07/09/2015</li>
+                        </ul>
+                        <i class="icon edit-icon"></i>
+                        <i class="icon delete-icon"></i>
+                    </div>
+                </div>
+                <div class="note-events__comments-item">
+                    <img src="img/Lady.jpg">
+                    <span class="comment-title">Casey Christiano</span>
+                    <p class="comment-content">This data is looking really good. Nice work, team!</p>
+                    <div class="comment-footer">
+                        <ul>
+                            <li><i class="icon insightful-icon"></i>Insightful</li>
+                            <li><i class="icon share-comment-icon"></i>Share</li>
+                            <li class="comment-date">Fri 07/10/2015</li>
+                        </ul>
+                        <i class="icon edit-icon"></i>
+                        <i class="icon delete-icon"></i>
+                    </div>
+                </div>
+                <div class="note-events__comments-item">
+                    <img src="img/Armstrong.jpg">
+                    <span class="comment-title">Neil Armstrong</span>
+                    <p class="comment-content">Why aren’t we seeing the data from this morning? Was there an outage or
+                        something?</p>
+                    <div class="comment-footer">
+                        <ul>
+                            <li><i class="icon insightful-icon"></i>Insightful</li>
+                            <li><i class="icon share-comment-icon"></i>Share</li>
+                            <li class="comment-date">Fri 07/10/2015</li>
+                        </ul>
+                        <i class="icon edit-icon"></i>
+                        <i class="icon delete-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="event-footer">
+            <ul>
+                <li><i class="icon reply-icon"></i>Reply</li>
+                <li><i class="icon follow-icon"></i>Follow</li>
+            </ul>
+            <i class="icon delete-icon"></i>
+        </div>
+    </section>
+    <section class="event-block simple-event">
+        <div class="event-content">
+            <div class="event-icon">
+                <i class="icon simple-event__icon simple-event__icon_grey"></i>
+                <span>1</span>
+            </div>
+            <div class="simple-event__message">
+                <span class="simple-event__title">Spring Break</span>
+                <p class="simple-event__date">Monday 08/10/2015 - Tuesday 08/11/2015</p>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="event-footer">
+            <ul>
+                <li><i class="icon reply-icon"></i>Comment</li>
+                <li><i class="icon follow-icon"></i>Follow</li>
+            </ul>
+            <i class="icon delete-icon"></i>
+        </div>
+    </section>
+    <section class="event-block simple-event">
+        <div class="event-content">
+            <div class="event-icon">
+                <i class="icon simple-event__icon simple-event__icon_brown"></i>
+                <span>2</span>
+            </div>
+            <div class="simple-event__message">
+                <span class="simple-event__title">@tferriss Twitter Mention</span>
+                <p class="simple-event__date">Monday 08/10/2015 - Tuesday 08/11/2015</p>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="event-footer">
+            <ul>
+                <li><i class="icon reply-icon"></i>Comment</li>
+                <li><i class="icon follow-icon"></i>Follow</li>
+            </ul>
+            <i class="icon delete-icon"></i>
+        </div>
+    </section>
+    <section class="event-block alert-event">
+        <div class="event-content">
+            <div class="event-icon">
+                <i class="icon alert-event__icon"></i>
+            </div>
+            <div class="alert-event__message">
+                <span class="red-text">$55,470</span> on 07/15/2015 08:21 is more than 10% above or below same time last fiscal quarter
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="event-footer">
+            <ul>
+                <li><i class="icon reply-icon"></i>Comment</li>
+                <li><i class="icon follow-icon"></i>Follow</li>
+            </ul>
+            <i class="icon delete-icon"></i>
+        </div>
+    </section>
+    <section class="event-block annotation-event">
+        <div class="event-content">
+            <div class="event-icon">
+                <i class="icon annotation-event__icon"></i>
+                <span>2</span>
+            </div>
+            <div class="annotation-event__message">
+                <span class="annotation-event__title blue-title">$9.94M on Saturday 09/01/2012</span>
+                <div class="annotation-item">
+                    <img src="img/Chaplin.jpg">
+                    <span class="comment-title">Louis Bedard</span>
+                    <p class="comment-content">Look at our inventory level right now; seems really low.</p>
+                    <div class="comment-footer">
+                        <ul>
+                            <li><i class="icon insightful-icon"></i>Insightful (3)</li>
+                            <li><i class="icon share-comment-icon"></i>Share</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="event-footer">
+            <ul>
+                <li><i class="icon reply-icon"></i>Comment</li>
+                <li><i class="icon follow-icon"></i>Follow</li>
+            </ul>
+            <i class="icon delete-icon"></i>
+        </div>
+    </section>
+    <div class="night-mode"></div>
+</div>
+
+<script type="text/javascript" src="js/script.main.js"></script>
+
+</body>
+</html>
